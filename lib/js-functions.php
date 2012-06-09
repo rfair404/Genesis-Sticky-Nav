@@ -36,9 +36,12 @@ class GSNM_Js_Stuff {
                 jQuery('#nav').css({ 'position': 'fixed', 'top':0, 'z-index':99999 });
                 //jQuery('.logged-in #nav').css({ 'top':'28px'});
                 jQuery('#nav .wrap').css({'position': 'relative', 'width':'960px', 'margin': '0 auto' });
+                //jQuery('#nav .wrap').fadeIn('slow', 'swing');
+                jQuery('body.admin-bar #wpadminbar').fadeOut('fast', 'linear'); //hides WordPress admin bar, sexy
             }
             else {
                 jQuery('#nav').css({ 'position': 'relative', 'top':0 });
+                jQuery('body.admin-bar #wpadminbar').fadeIn('fast', 'swing');
             }
 
         }
