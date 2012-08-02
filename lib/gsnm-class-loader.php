@@ -1,5 +1,6 @@
 <?php
 
+
 class GSNM_Start {
 
     function GSNM_Start(){
@@ -15,7 +16,7 @@ class GSNM_Start {
 		require_once(GSNM_DIR . '/lib/filter-genesis-primary-nav.php');
     	
     	$gsnmJs = new GSNM_Js_Stuff();
-    	//$gsnmMenuWalker = new GSNM_Menu_walker();
+    	$gsnmMenuWalker = new GSNM_Menu_walker();
     	$gsnmFilterGenesisPrimaryNav = new GSNM_Filter_Genesis_Primary_Nav();
 
     }
